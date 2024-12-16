@@ -188,11 +188,22 @@ For the hyperparameter tuning task, I have selected Logistic Regression as the c
 ![image](https://github.com/user-attachments/assets/fc1853b6-73f6-4444-b22c-219a65aa6aa0)
 
 
+
+## Standout Suggestions
+There are some steps we can try to improve the performance of mode:
+1. Hyperparameter:
+- C: Try a uniform range between 1 and 5 to improve performance.
+- max_iter: Test values of 100 and 200 to see if performance improves.
+- SMOTE: Use SMOTE for oversampling to balance the survival and non-survival passenger ratio.
+- Model Experiments: Explore tree-based models and boosting models like XGBoost, CatBoost, and LightGBM for potentially better accuracy.
+
+2. AutoML
+- Max Iterations: Increase to 10 to explore more options.
+- Primary Metric: Use AUC_weighted to potentially improve model accuracy.
+
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
-
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.

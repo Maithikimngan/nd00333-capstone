@@ -29,12 +29,41 @@ Below is description of data:
 - Age: the passenger's age (20, 30, 45, ...)
 - SibSp: the	number of siblings / spouses	(0, 2, 3, ...)
 - Parch: the	number of parents / children (0, 1, 2, ...)
-- Ticket:	th ticket id (A/5 21171, ...)
+- Ticket:	the ticket id (A/5 21171, ...)
 - Fare: the	Passenger fare (10.34, 8.50, ...)
 - Cabin: the	cabin id	(A12, B34, ...)
 - Embarked: the	Port of Embarkation	(C = Cherbourg, Q = Queenstown, S = Southampton)
-### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+### Project steps:
+1. Dataset description
+The Titanic survival dataset consists of 12 features and a total of 891 records. The dataset is sourced from Kaggle and provides historical data on Titanic passengers, including their demographic details, ticket information, and survival status.
+- Survival Status: 342 passengers survived. 549 passengers did not survive.
+- Survival Rate: The survival rate is approximately 38% across the dataset.
+- The goal of this project is to build a classification model that can predict the survival probability of passengers based on the provided features. 
+
+To get the dataset, we can download from Kaggle. Import Dataset: Upload the dataset to the Azure workspace for further processing and analysis.
+
+2. Hyperparameter Tuning
+- Select Hyperparameters: hyperparameters such as C (regularization parameter) and max_iters (maximum iterations) for tuning.
+- Submit Run: Execute the model training run with the selected hyperparameters and record the run with the highest accuracy.
+- Register Best Model: Save and register the model that achieved the best performance during hyperparameter tuning.
+
+3. Auto ML
+- Dataset Preparation: Use the same Titanic survival dataset.
+- Configure AutoML Settings: Set up AutoML with primary metrics, maximum iterations, and timeout settings to automate the process of model selection and tuning.
+- Register Best Model: Save and register the best-performing model.
+
+4. Model Comparison
+- Evaluate Models: Compare the accuracy and performance of the models trained using hyperparameter tuning and AutoML.
+- Select Best Model: Identify the model with the superior accuracy for deployment.
+
+5. Model Deployment
+- Deploy Model: Deploy the best model.
+- Prepare for Inference: Download the environment and the score.py script from the best run to configure the inference pipeline.
+- Check Endpoint Status: Verify that the endpoint deployment is healthy and ready for use.
+
+6. Endpoint Testing
+- Send Post Request: Send a post request to the deployed model's endpoint to obtain predictions.
+- Compare Predictions: Evaluate the predictions against the ground truth values to assess the model's performance.
 
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.

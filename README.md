@@ -94,15 +94,6 @@ Evaluation Metric: The primary metric selected for evaluating the model's perfor
 - Debug Logging: Debug logging is enabled, and the logs will be saved to a file named automl_errors.log. This file will capture any errors or issues that occur during the AutoML process, aiding in troubleshooting and ensuring a smooth experiment run.
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
-## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
-
-
-### Results
 1. Register the Titanic dataset to workspace
 ![image](https://github.com/user-attachments/assets/3a8e5225-c81a-4957-bea5-bac0ce9a9f12)
 
@@ -133,6 +124,7 @@ Evaluation Metric: The primary metric selected for evaluating the model's perfor
 
 ![image](https://github.com/user-attachments/assets/448f3939-92b7-4c93-af82-46d8e3769586)
 
+## Hyperparameter Tuning
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.

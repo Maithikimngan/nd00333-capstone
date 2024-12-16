@@ -164,7 +164,20 @@ For the hyperparameter tuning task, I have selected Logistic Regression as the c
 
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+1. Choose to deploye the automl model because:
+- According to above result, the accuracy of automl is 84%, while accuracy of hyperparameter is 78%
+- To get the best performance, we'll deploy the AutoML model, which has approximately 6% higher accuracy than hyperparameter tuning. We'll enable Application Insights, pass the environment and score script to the Inference config, and set up the Azure Container Instance (ACI) with 1 CPU core and 1 GB memory.
+
+2. Deployment details
+- The deployment status is healthy
+
+
+![image](https://github.com/user-attachments/assets/5a8c73a6-4242-4aa4-ab1c-837748c25351)
+
+- The application insights is enable
+
+![image](https://github.com/user-attachments/assets/f34b79c6-c1ee-4863-9f28-fe5bc6a112f9)
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:

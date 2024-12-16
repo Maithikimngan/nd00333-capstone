@@ -176,7 +176,16 @@ For the hyperparameter tuning task, I have selected Logistic Regression as the c
 
 - The application insights is enable
 
-![image](https://github.com/user-attachments/assets/f34b79c6-c1ee-4863-9f28-fe5bc6a112f9)
+![image](https://github.com/user-attachments/assets/77093c82-ad68-4129-bc8b-4a7c7917bb13)
+
+4. Send some data to endpoint fior testing
+- I send 5 samples to test the model
+
+![image](https://github.com/user-attachments/assets/5ea70cdf-5954-429d-8e97-dd8246d6a537)
+
+- Compare the prediction result with the ground truth
+
+![image](https://github.com/user-attachments/assets/fc1853b6-73f6-4444-b22c-219a65aa6aa0)
 
 
 ## Screen Recording

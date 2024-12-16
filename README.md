@@ -21,7 +21,18 @@ The dataset for this project pertains to the survival probability of Titanic pas
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ## Dataset
-
+This is the Titanic dataset taken from Kaggle with link: https://www.kaggle.com/c/titanic/data 
+Below is description of data:
+- Survived: if the passenger survived or not (True/False)
+- Pclass: the	Ticket class	(1 = 1st, 2 = 2nd, 3 = 3rd)
+- Sex:	Gender	(Male, Female)
+- Age: the passenger's age (20, 30, 45, ...)
+- SibSp: the	number of siblings / spouses	(0, 2, 3, ...)
+- Parch: the	number of parents / children (0, 1, 2, ...)
+- Ticket:	th ticket id (A/5 21171, ...)
+- Fare: the	Passenger fare (10.34, 8.50, ...)
+- Cabin: the	cabin id	(A12, B34, ...)
+- Embarked: the	Port of Embarkation	(C = Cherbourg, Q = Queenstown, S = Southampton)
 ### Overview
 *TODO*: Explain about the data you are using and where you got it from.
 

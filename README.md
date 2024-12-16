@@ -8,8 +8,10 @@ The dataset for this project pertains to the survival probability of Titanic pas
 2. Data Importation:
 - Import the chosen dataset into the Azure workspace for further analysis and model training.
 3. Model Training:
+  
 3.1. Automated Machine Learning (AutoML):
 - Leverage Azure's AutoML to automate the process of model selection and hyperparameter tuning.
+
 3.2. HyperDrive:
 - Employ HyperDrive to further fine-tune hyperparameters and optimize model performance.
 4. Model Comparison:

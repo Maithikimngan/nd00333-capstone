@@ -35,12 +35,11 @@ Below is description of data:
 - Embarked: the	Port of Embarkation	(C = Cherbourg, Q = Queenstown, S = Southampton)
 ### Project steps:
 1. Dataset description
-The Titanic survival dataset consists of 12 features and a total of 891 records. The dataset is sourced from Kaggle and provides historical data on Titanic passengers, including their demographic details, ticket information, and survival status.
+- The Titanic survival dataset consists of 12 features and a total of 891 records. The dataset is sourced from Kaggle and provides historical data on Titanic passengers, including their demographic details, ticket information, and survival status.
 - Survival Status: 342 passengers survived. 549 passengers did not survive.
 - Survival Rate: The survival rate is approximately 38% across the dataset.
 - The goal of this project is to build a classification model that can predict the survival probability of passengers based on the provided features. 
-
-To get the dataset, we can download from Kaggle. Import Dataset: Upload the dataset to the Azure workspace for further processing and analysis.
+- To get the dataset, we can download from Kaggle. Import Dataset: Upload the dataset to the Azure workspace for further processing and analysis.
 
 2. Hyperparameter Tuning
 - Select Hyperparameters: hyperparameters such as C (regularization parameter) and max_iters (maximum iterations) for tuning.

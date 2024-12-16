@@ -33,7 +33,7 @@ Below is description of data:
 - Fare: the	Passenger fare (10.34, 8.50, ...)
 - Cabin: the	cabin id	(A12, B34, ...)
 - Embarked: the	Port of Embarkation	(C = Cherbourg, Q = Queenstown, S = Southampton)
-### Project steps:
+### Task:
 1. Dataset description
 - The Titanic survival dataset consists of 12 features and a total of 891 records. The dataset is sourced from Kaggle and provides historical data on Titanic passengers, including their demographic details, ticket information, and survival status.
 - Survival Status: 342 passengers survived. 549 passengers did not survive.
@@ -64,14 +64,34 @@ Below is description of data:
 - Send Post Request: Send a post request to the deployed model's endpoint to obtain predictions.
 - Compare Predictions: Evaluate the predictions against the ground truth values to assess the model's performance.
 
-### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+Below is how we can access the dataset:
+1. Go to Kaggle, login and get the dataset (https://www.kaggle.com/c/titanic/data)
+2. Upload the dataset to github repo and choose to copy the 'raw' data option
+3. Read the dataset using Dataset.Tabular.from_delimited_files.
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+please rephrase the text in more detail manner: Setting the automl Experiment timeout minutes: 30 minnutes timeout Max concurrent iterations: 5 times Primary metric: accuracy Automl config: Task: classification task Label column: Survived Featurization: auto feature engineer Debug log: automl_errors.log
+Here’s a more detailed version of the text:
+
+Setting Up AutoML
+To configure AutoML for the Titanic survival classification task, several key parameters must be defined:
+
+1. Experiment Timeout
+Timeout Duration: The total time allocated for the AutoML experiment is set to 30 minutes. This means the entire process will stop if it reaches this time limit, ensuring efficient use of resources and preventing excessively long runs.
+
+2. Concurrent Iterations
+Maximum Concurrent Iterations: The experiment is configured to run up to 5 iterations concurrently. This allows multiple models to be trained and evaluated simultaneously, speeding up the process and optimizing the use of computational resources.
+
+3. Primary Metric
+Evaluation Metric: The primary metric selected for evaluating the model's performance is accuracy. This metric measures the proportion of correctly classified instances out of the total instances, making it a suitable choice for binary classification tasks like predicting survival.
+
+4. AutoML Configuration
+- Task Type: The task is defined as a classification task. This indicates that the goal is to predict categorical outcomes—specifically, whether a passenger survived or not.
+- Label Column: The label column, which contains the target variable, is set to 'Survived'. This column indicates the survival status of each passenger.
+- Featurization: Featurization is set to automatic. This means AutoML will automatically handle feature engineering, including data preprocessing, transformation, and selection of the most relevant features to improve model performance.
+- Debug Logging: Debug logging is enabled, and the logs will be saved to a file named automl_errors.log. This file will capture any errors or issues that occur during the AutoML process, aiding in troubleshooting and ensuring a smooth experiment run.
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
@@ -83,9 +103,36 @@ Below is description of data:
 
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+1. Register the Titanic dataset to workspace
+![image](https://github.com/user-attachments/assets/3a8e5225-c81a-4957-bea5-bac0ce9a9f12)
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+2. Register the best model from automl
+- This is the models tested by Auto ML. We can see that the Voting Ensemble is the best model for accuracy
+
+![image](https://github.com/user-attachments/assets/7d9878c5-ee02-4b4e-90d5-eb5e9ddb9854)
+
+- The model accuracy is 84%
+- The model is registered
+- The model is deployed successfully
+
+![image](https://github.com/user-attachments/assets/5ec6f71f-2e6e-4df6-943c-4cf443e2d47a)
+
+3. Run Details
+- The Run Details show the status of the experiment
+
+![image](https://github.com/user-attachments/assets/625ce318-de77-4b8b-b227-1c31e4a22668)
+
+- The best run from automl
+
+![image](https://github.com/user-attachments/assets/2a20f4eb-1198-401f-87fe-b84e452d800c)
+
+![image](https://github.com/user-attachments/assets/e15de51f-bd5a-4430-a4d0-269d2f1e7838)
+
+4. Best model registration
+![image](https://github.com/user-attachments/assets/63c940a6-2b8b-4dcd-8a16-35388110cee9)
+
+![image](https://github.com/user-attachments/assets/448f3939-92b7-4c93-af82-46d8e3769586)
+
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.

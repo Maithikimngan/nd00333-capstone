@@ -125,6 +125,43 @@ Evaluation Metric: The primary metric selected for evaluating the model's perfor
 ![image](https://github.com/user-attachments/assets/448f3939-92b7-4c93-af82-46d8e3769586)
 
 ## Hyperparameter Tuning
+For the hyperparameter tuning task, I have selected Logistic Regression as the classifier model. This choice is appropriate for binary classification problems, such as predicting the survival of passengers on the Titanic.
+1. Regularization Strength (C)
+- The regularization strength parameter, C, controls the inverse of the regularization term in Logistic Regression. A smaller value of C indicates stronger regularization, which can help prevent overfitting.
+- For this task, a random floating-point value between 0.05 and 0.1 will be chosen to explore different regularization strengths.
+
+2. Maximum Iterations (max_iter)
+- The maximum number of iterations parameter, max_iter, specifies the maximum number of iterations the solver will execute to converge to a solution.
+- For this task, one of the following random iterations will be selected: 16, 32, 64, or 128 iterations. This allows for experimenting with different convergence settings to find the optimal model performance.
+
+### Result
+1. Best run from hyper parameter:
+
+![image](https://github.com/user-attachments/assets/5f55d461-ee80-4116-bd15-924706459619)
+
+
+![image](https://github.com/user-attachments/assets/ba59545c-d0f3-49a0-bf86-b551facb4cae)
+
+- The best accuracy is 78%
+- The optimal C is 0.0995
+- The optimal max_iter is 128
+
+2. Run Details
+
+![image](https://github.com/user-attachments/assets/5d787b7f-4141-4648-96a2-ca3fc389ca39)
+
+3. Best run and accuracy
+
+
+![image](https://github.com/user-attachments/assets/ba3954f0-5bd0-44cc-ba4b-ef5f0e20ddb7)
+
+
+![image](https://github.com/user-attachments/assets/339ad13f-ed64-43a5-a85e-7aa5aa42b84e)
+
+4. Save the best model
+
+![image](https://github.com/user-attachments/assets/840ca90a-92b6-479b-87c9-e513beaee698)
+
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.

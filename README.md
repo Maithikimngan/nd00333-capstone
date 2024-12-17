@@ -72,9 +72,6 @@ Below is how we can access the dataset:
 3. Read the dataset using Dataset.Tabular.from_delimited_files.
 
 ## Automated ML
-please rephrase the text in more detail manner: Setting the automl Experiment timeout minutes: 30 minnutes timeout Max concurrent iterations: 5 times Primary metric: accuracy Automl config: Task: classification task Label column: Survived Featurization: auto feature engineer Debug log: automl_errors.log
-Here’s a more detailed version of the text:
-
 Setting Up AutoML
 To configure AutoML for the Titanic survival classification task, several key parameters must be defined:
 
